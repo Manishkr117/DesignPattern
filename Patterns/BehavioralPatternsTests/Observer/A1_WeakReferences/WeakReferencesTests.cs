@@ -65,7 +65,7 @@ namespace BehavioralPatternsTests.Observer.A1_WeakReferences
             //subject.UnregisterObserver(wr1);
             foreach (var foo in subject.Observers)
             {
-                foo?.TryGetTarget(out var observer);
+                //foo?.TryGetTarget(out var = foo);
             }
             subject.UnregisterObserver(wr2);
             Assert.Equal(0, subject.Observers.Count);

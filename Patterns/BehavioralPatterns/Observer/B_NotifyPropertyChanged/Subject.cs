@@ -17,7 +17,7 @@ namespace BehavioralPatterns.Observer.B_NotifyPropertyChanged
 
         public string Name
         {
-            get => _name;
+            get { return _name; }
             set
             {
                 if (value != _name)

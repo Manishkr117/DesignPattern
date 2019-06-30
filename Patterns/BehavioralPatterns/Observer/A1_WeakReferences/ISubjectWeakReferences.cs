@@ -43,18 +43,18 @@ namespace BehavioralPatterns.Observer.A1_WeakReferences
 
         public void NotifyObservers(GameResult result)
         {
-            foreach (var itm in Observers.ToArray())
-            {
-                itm.TryGetTarget(out ICustomObserver obs);
-                if (obs == null)
-                {
-                    UnregisterObserver(itm);
-                }
-                else
-                {
-                    obs.Update(result);
-                }
-            }
+            //foreach (var itm in Observers.ToArray())
+            //{
+            //    itm.TryGetTarget(out ICustomObserver obs);
+            //    if (obs == null)
+            //    {
+            //        UnregisterObserver(itm);
+            //    }
+            //    else
+            //    {
+            //        obs.Update(result);
+            //    }
+            //}
             //Observers.ForEach(x =>
             //{
             //    x.TryGetTarget(out ICustomObserver obs);
